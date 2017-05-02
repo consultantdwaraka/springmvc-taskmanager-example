@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/masterLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="taskList" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Task List" />
+		<put-attribute name="body" value="/WEB-INF/jsp/taskList.jsp" />
+	</definition>
+	<definition name="newTask" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Create New Task" />
+		<put-attribute name="body" value="/WEB-INF/jsp/NewTask.jsp" />
+	</definition>
+	<definition name="editTask" extends="newTask">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Edit Task" />
+		<put-attribute name="body" value="/WEB-INF/jsp/NewTask.jsp" />
+	</definition>
+	<definition name="login" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/jsp/LoginView.jsp" />
+	</definition>
+	
+	<definition name="createTask" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Create New Task" />
+		<put-attribute name="body" value="/WEB-INF/jsp/NewTask.jsp" />
+	</definition>
+	
+	<definition name="userList" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Employee List" />
+		<put-attribute name="body" value="/WEB-INF/jsp/userList.jsp" />
+	</definition>
+	
+	<definition name="newUser" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Create New Employee" />
+		<put-attribute name="body" value="/WEB-INF/jsp/NewUser.jsp" />
+	</definition>
+	
+	<definition name="createUser" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Create New Task" />
+		<put-attribute name="body" value="/WEB-INF/jsp/NewUser.jsp" />
+	</definition>
+	
+	<definition name="editUser" extends="base.definition">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="title" value="Edit Employee Details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/NewUser.jsp" />
+	</definition>
+
+</tiles-definitions>
